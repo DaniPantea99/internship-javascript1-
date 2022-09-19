@@ -16,6 +16,11 @@ body {
     background-color: #000;
 }
 
+img:hover {
+    transition: all 0.6s ease;
+    transform: rotate(360deg); 
+}
+
 .topright__glow {
     position: absolute;
     top: 0;
@@ -74,6 +79,12 @@ body {
     background-image: linear-gradient(180deg, #990100, #f85d06);
 }
 
+.left__circle:hover {
+    filter: brightness(120%);
+    box-shadow: 0 0 40px 0 #f85d06;
+    transition: all 0.3s ease-out;
+}
+
 .right__circle {
     position: absolute;
     bottom: -80px;
@@ -82,6 +93,12 @@ body {
     height: 230px;
     border-radius: 500px;
     background: linear-gradient(to bottom, #013aff 0%, #2989d8 100%, #2989d8 100%, #207cca 100%, #207cca 100%, #7db9e8 100%, #00ceff 100%);
+}
+
+.right__circle:hover {
+    filter: brightness(120%);
+    box-shadow: 0 0 40px 0 #013aff;
+    transition: all 0.3s ease-out;
 }
 
 .brand {
@@ -104,10 +121,11 @@ body {
 }
 
 .card__number {
+    display: flex;
     padding-top: 20px;
     font-weight: 600;
-    word-spacing: 20px;
     font-size: 24px;
+    /* word-spacing: 20px; */
 }
 
 .owner__name {

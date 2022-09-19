@@ -1,10 +1,65 @@
-button {
+.btn__showDetails {
     appearance: none;
-    border: 2px solid red;
+    border: none;
+    max-width: 200px;
+    width: 100%;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(5px);
+    margin-top: 2rem;
+    background-image: linear-gradient(180deg, #ea621d, #b02f10);
+    border-radius: 5px;
     color: white;
-    margin-top: 50px;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
 }
+
+.btn__showDetails:hover {
+    filter: brightness(130%);
+    box-shadow: 0 0 20px 0 #d77f32c4;
+}
+
+.showDetails {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#stopwatch {
+    visibility: hidden;
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+#stopwatch:hover {
+    font-size: 2.5rem;
+    color: red;
+   
+}
+
+.hide-nr {
+    visibility: hidden;
+    position: relative;
+}
+
+.format {
+    padding-right: 20px;
+}
+
+.hide-nr::after {
+    content: '**** **** ****';
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    left: 0;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+}
+
+
 
